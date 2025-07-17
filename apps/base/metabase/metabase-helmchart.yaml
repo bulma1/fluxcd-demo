@@ -9,4 +9,4 @@ spec:
     kind: GitRepository
     name: metabase-charts
   interval: 1h
-  version: 0.45.2 
+  version: 0.14.4 
