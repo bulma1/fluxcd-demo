@@ -7,6 +7,10 @@ spec:
   chart:
     spec:
       version: 0.48.7
+      sourceRef:
+        kind: HelmChart
+        name: metabase
+        namespace: metabase
   values:
     service:
       type: ClusterIP
