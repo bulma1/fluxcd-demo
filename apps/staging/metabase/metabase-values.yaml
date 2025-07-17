@@ -12,6 +12,7 @@ spec:
       tag: v0.48.7 # Example image tag
     persistence:
       enabled: true
-      accessMode: ReadWriteOnce
+      accessModes:
+        - ReadWriteOnce
       size: 1Gi
       # storageClass: "" # Optionally set your storage class 
