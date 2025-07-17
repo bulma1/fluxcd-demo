@@ -10,7 +10,9 @@ spec:
       chart: metabase
       sourceRef:
         kind: HelmRepository
-        name: sunasteriskrnd
+        name: bitnami
+        namespace: flux-system
+      version: 5.48.0 # or latest
   interval: 30m
   install:
     remediation:
@@ -18,6 +20,8 @@ spec:
   # Default values
   # https://github.com/sun-asterisk-research/helm-charts/blob/master/charts/metabase/values.yaml
   values:
-    image:
-      tag: latest
-      pullPolicy: Always
+    service:
+      type: ClusterIP
+    persistence:
+      enabled: true
+      size: 1Gi

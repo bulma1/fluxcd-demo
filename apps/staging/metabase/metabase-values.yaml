@@ -6,13 +6,10 @@ metadata:
 spec:
   chart:
     spec:
-      version: 1.0.5
+      version: 5.48.0 # or latest Bitnami version
   values:
-    image:
-      tag: v0.48.7
+    service:
+      type: ClusterIP
     persistence:
       enabled: true
-      accessModes:
-        - ReadWriteOnce
-      size: 1Gi
-      storageClass: ""  # Set to your storage class if needed 
+      size: 1Gi 
