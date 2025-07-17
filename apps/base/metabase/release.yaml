@@ -12,7 +12,7 @@ spec:
         kind: HelmRepository
         name: deliveryhero
         namespace: metabase
-      version: 0.46.6 # Use the version you want from Delivery Hero
+      version: 0.45.2 # Use the version you want from Delivery Hero
   interval: 30m
   values:
     service:
