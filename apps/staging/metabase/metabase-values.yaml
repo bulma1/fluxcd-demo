@@ -10,4 +10,8 @@ spec:
   values:
     image:
       tag: v0.48.7 # Example image tag
-    # Add other value overrides as needed 
+    persistence:
+      enabled: true
+      accessMode: ReadWriteOnce
+      size: 1Gi
+      # storageClass: "" # Optionally set your storage class 
