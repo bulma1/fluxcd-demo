@@ -7,10 +7,10 @@ spec:
   releaseName: metabase
   chart:
     spec:
-      chart: metabase
+      chart: charts/metabase
       sourceRef:
-        kind: HelmChart
-        name: metabase
+        kind: GitRepository
+        name: metabase-charts
         namespace: metabase
       version: 0.48.7
   interval: 30m

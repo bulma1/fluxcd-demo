@@ -8,6 +8,5 @@ spec:
   sourceRef:
     kind: GitRepository
     name: metabase-charts
-    namespace: metabase
   interval: 1h
   version: 0.48.7 
