@@ -6,7 +6,7 @@ metadata:
 spec:
   chart:
     spec:
-      version: 0.1.0 # Specify the chart version you want
+      version: 1.0.6 # Updated to available chart version
   values:
     image:
       tag: v0.48.7 # Example image tag
