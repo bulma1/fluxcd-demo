@@ -6,13 +6,9 @@ metadata:
 spec:
   chart:
     spec:
-      version: 1.0.6 # Updated to available chart version
+      version: 1.0.5 # Try earlier chart version
   values:
     image:
       tag: v0.48.7 # Example image tag
     persistence:
-      enabled: true
-      accessModes:
-        - ReadWriteOnce
-      size: 1Gi
-      # storageClass: "" # Optionally set your storage class 
+      enabled: false 
