@@ -10,9 +10,9 @@ spec:
       chart: metabase
       sourceRef:
         kind: HelmRepository
-        name: bitnami
-        namespace: flux-system
-      version: 2.4.32
+        name: metabase
+        namespace: metabase
+      version: 0.48.7
   interval: 30m
   values:
     service:
