@@ -1,0 +1,8 @@
+apiVersion: source.toolkit.fluxcd.io/v1beta2
+kind: HelmRepository
+metadata:
+  name: sun-asterisk-research
+  namespace: metabase
+spec:
+  interval: 30m
+  url: https://sun-asterisk-research.github.io/helm-charts 

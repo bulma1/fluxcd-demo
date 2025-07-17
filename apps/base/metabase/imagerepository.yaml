@@ -1,0 +1,8 @@
+apiVersion: image.toolkit.fluxcd.io/v1beta2
+kind: ImageRepository
+metadata:
+  name: metabase
+  namespace: metabase
+spec:
+  image: docker.io/metabase/metabase
+  interval: 30m 

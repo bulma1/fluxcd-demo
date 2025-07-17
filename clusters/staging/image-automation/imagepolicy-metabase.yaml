@@ -1,0 +1,15 @@
+apiVersion: image.toolkit.fluxcd.io/v1beta1
+kind: ImagePolicy
+metadata:
+  name: metabase
+  namespace: flux-system
+spec:
+  imageRepositoryRef:
+    name: metabase
+    namespace: metabase
+  filterTags:
+    pattern: '^v(?P<number>[0-9]+)'
+    extract: '$number.0.0'
+  policy:
+    semver:
+      range: ">=0" 
