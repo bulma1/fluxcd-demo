@@ -12,7 +12,7 @@ spec:
         kind: HelmRepository
         name: bitnami
         namespace: flux-system
-      version: 2.4.32  # ✅ This is the correct version
+      version: 2.4.32  
   interval: 30m
   values:
     service:
