@@ -9,7 +9,7 @@ spec:
     spec:
       chart: metabase
       sourceRef:
-        kind: HelmRepository
+        kind: HelmChart
         name: metabase
         namespace: metabase
       version: 0.48.7

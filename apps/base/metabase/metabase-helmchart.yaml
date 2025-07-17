@@ -1,0 +1,13 @@
+apiVersion: source.toolkit.fluxcd.io/v1
+kind: HelmChart
+metadata:
+  name: metabase
+  namespace: metabase
+spec:
+  chart: charts/metabase
+  sourceRef:
+    kind: GitRepository
+    name: metabase-charts
+    namespace: metabase
+  interval: 1h
+  version: 0.48.7 
