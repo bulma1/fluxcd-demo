@@ -6,7 +6,7 @@ metadata:
 spec:
   chart:
     spec:
-      version: 5.48.0 # or latest Bitnami version
+      version: 2.4.32
   values:
     service:
       type: ClusterIP
