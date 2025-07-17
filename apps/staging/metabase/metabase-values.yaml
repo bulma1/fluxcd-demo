@@ -6,10 +6,10 @@ metadata:
 spec:
   chart:
     spec:
-      version: 0.48.7
+      version: 0.46.6
       sourceRef:
-        kind: HelmChart
-        name: metabase
+        kind: HelmRepository
+        name: deliveryhero
         namespace: metabase
   values:
     service:

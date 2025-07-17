@@ -7,12 +7,12 @@ spec:
   releaseName: metabase
   chart:
     spec:
-      chart: charts/metabase
+      chart: metabase
       sourceRef:
-        kind: GitRepository
-        name: metabase-charts
+        kind: HelmRepository
+        name: deliveryhero
         namespace: metabase
-      version: 0.48.7
+      version: 0.46.6 # Use the version you want from Delivery Hero
   interval: 30m
   values:
     service:
