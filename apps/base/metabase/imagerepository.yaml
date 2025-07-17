@@ -1,8 +1,12 @@
-apiVersion: image.toolkit.fluxcd.io/v1beta2
+apiVersion: image.toolkit.fluxcd.io/v1beta1
 kind: ImageRepository
 metadata:
   name: metabase
   namespace: metabase
 spec:
   image: docker.io/metabase/metabase
-  interval: 30m 
+  interval: 5m0s
+  accessFrom:
+    namespaceSelectors:
+      - matchLabels:
+          kubernetes.io/metadata.name: flux-system

@@ -1,18 +1,23 @@
-apiVersion: helm.toolkit.fluxcd.io/v2beta2
+apiVersion: helm.toolkit.fluxcd.io/v2
 kind: HelmRelease
 metadata:
   name: metabase
   namespace: metabase
 spec:
-  interval: 30m
   releaseName: metabase
   chart:
     spec:
       chart: metabase
       sourceRef:
         kind: HelmRepository
-        name: sun-asterisk-research
-        namespace: metabase
-      interval: 30m
+        name: sunasteriskrnd
+  interval: 30m
+  install:
+    remediation:
+      retries: 3
+  # Default values
+  # https://github.com/sun-asterisk-research/helm-charts/blob/master/charts/metabase/values.yaml
   values:
-    # Default values here, can be overridden in overlays 
+    image:
+      tag: latest
+      pullPolicy: Always
